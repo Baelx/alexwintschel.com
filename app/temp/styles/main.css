@@ -1,0 +1,43 @@
+/* define mixins here */
+/* global styles go here */
+body {
+font-family: 'Source Serif Pro', serif;
+background: url("/assets/images/img.jpg") no-repeat;
+background-position: center;
+background-size: cover;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 10fr);
+  grid-template-rows: repeat(10, 10fr);
+  grid-gap: 2vw;
+}
+.element-1 {
+  grid-column: 2 / 6;
+        grid-row: 2 / 3;
+        align-self: center;
+font-size: 3rem;
+}
+.element-2 {
+  grid-column: 2 / 6;
+        grid-row: 3 / 6;
+        align-self: top;
+font-size: 1.2rem;
+}
+.element-3 {
+  grid-column: 6 / 7;
+        grid-row: 6 / 8;
+        align-self: top;
+background-color: grey;
+font-size: 1.2rem;
+padding: 4px;
+}
+.element-4 {
+  grid-column: 8 / 9;
+        grid-row: 3 / 5;
+        align-self: top;
+background-color: grey;
+font-size: 1.2rem;
+padding: 4px;
+}
+/* example module */
